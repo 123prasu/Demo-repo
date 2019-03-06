@@ -1,116 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21411" started-at="2019-02-27T06:30:50Z" finished-at="2019-02-27T06:31:11Z">
+  <suite name="Default suite" duration-ms="141651" started-at="2019-03-06T06:11:14Z" finished-at="2019-03-06T06:13:36Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="21411" started-at="2019-02-27T06:30:50Z" finished-at="2019-02-27T06:31:11Z">
-      <class name="memdesk12.Screenshots">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="setUp" is-config="true" duration-ms="8163" started-at="2019-02-27T06:30:50Z" finished-at="2019-02-27T06:30:58Z">
+    <test name="Default test" duration-ms="141651" started-at="2019-03-06T06:11:14Z" finished-at="2019-03-06T06:13:36Z">
+      <class name="dataProvider.MyTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvider.MyTests@598067a5]" name="setUp" is-config="true" duration-ms="19475" started-at="2019-03-06T06:11:15Z" finished-at="2019-03-06T06:11:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="takeScreenshot()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="takeScreenshot" duration-ms="4716" started-at="2019-02-27T06:30:58Z" finished-at="2019-02-27T06:31:02Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[String is not matched expected [learn] but found [[[ChromeDriver: chrome on XP (cc4a39ce084d0e174d7dd4b44fa152bc)] -> id: identifierId]]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: String is not matched expected [learn] but found [[[ChromeDriver: chrome on XP (cc4a39ce084d0e174d7dd4b44fa152bc)] -> id: identifierId]]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at memdesk12.Screenshots.takeScreenshot(Screenshots.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="regstration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataProvider.MyTests@598067a5]" name="regstration" duration-ms="18542" started-at="2019-03-06T06:11:34Z" data-provider="passData" finished-at="2019-03-06T06:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ellen]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[disurd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ellen@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenshot -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="quit" is-config="true" duration-ms="712" started-at="2019-02-27T06:31:03Z" finished-at="2019-02-27T06:31:04Z">
+        </test-method> <!-- regstration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:dataProvider.MyTests@598067a5]" name="quit" is-config="true" duration-ms="0" started-at="2019-03-06T06:11:53Z" finished-at="2019-03-06T06:11:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="setUp" is-config="true" duration-ms="5443" started-at="2019-02-27T06:31:04Z" finished-at="2019-02-27T06:31:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvider.MyTests@598067a5]" name="setUp" is-config="true" duration-ms="16990" started-at="2019-03-06T06:11:53Z" finished-at="2019-03-06T06:12:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="takeScreenshot1()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="takeScreenshot1" duration-ms="21" started-at="2019-02-27T06:31:09Z" finished-at="2019-02-27T06:31:09Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[String is not matched expected [Gogle] but found [Google]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: String is not matched expected [Gogle] but found [Google]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at memdesk12.Screenshots.takeScreenshot1(Screenshots.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="regstration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataProvider.MyTests@598067a5]" name="regstration" duration-ms="15794" started-at="2019-03-06T06:12:10Z" data-provider="passData" finished-at="2019-03-06T06:12:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rick]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pat@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenshot1 -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:memdesk12.Screenshots@7e2d773b]" name="quit" is-config="true" duration-ms="854" started-at="2019-02-27T06:31:10Z" finished-at="2019-02-27T06:31:11Z">
+        </test-method> <!-- regstration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:dataProvider.MyTests@598067a5]" name="quit" is-config="true" duration-ms="1" started-at="2019-03-06T06:12:26Z" finished-at="2019-03-06T06:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- memdesk12.Screenshots -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvider.MyTests@598067a5]" name="setUp" is-config="true" duration-ms="15449" started-at="2019-03-06T06:12:26Z" finished-at="2019-03-06T06:12:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="regstration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataProvider.MyTests@598067a5]" name="regstration" duration-ms="17637" started-at="2019-03-06T06:12:41Z" data-provider="passData" finished-at="2019-03-06T06:12:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[geremy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[waters]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[waters@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regstration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:dataProvider.MyTests@598067a5]" name="quit" is-config="true" duration-ms="0" started-at="2019-03-06T06:12:59Z" finished-at="2019-03-06T06:12:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvider.MyTests@598067a5]" name="setUp" is-config="true" duration-ms="18241" started-at="2019-03-06T06:12:59Z" finished-at="2019-03-06T06:13:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="regstration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataProvider.MyTests@598067a5]" name="regstration" duration-ms="18533" started-at="2019-03-06T06:13:17Z" data-provider="passData" finished-at="2019-03-06T06:13:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samantha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rudlee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sam@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regstration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:dataProvider.MyTests@598067a5]" name="quit" is-config="true" duration-ms="0" started-at="2019-03-06T06:13:36Z" finished-at="2019-03-06T06:13:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- dataProvider.MyTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
